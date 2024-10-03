@@ -1,12 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Login from './components/Login';
+import Home from './components/Home';
+import Login  from './components/Login';
+import{Route,Routes} from 'react-router-dom';
+import Home2 from './components/Home2';
 
 function App() {
   return (
-    <div className="App">
-      <Login></Login>
-    </div>
+    <>
+
+
+<Routes>
+  <Route  path='/' element={<Login/>}/>
+  <Route path='/home' element={<Home/>}/>
+</Routes>
+    </>
   );
 }
 

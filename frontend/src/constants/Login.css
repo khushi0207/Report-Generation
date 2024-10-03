@@ -1,0 +1,21 @@
+.container{
+    margin: 550px;
+    background-color: aliceblue;
+    opacity: 0.4;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border: solid 3px white;
+}
+.inputs{
+
+}
+button{
+
+}
+body, html {
+    height: 100%;
+    background-image: url("../constants/login_bg_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }

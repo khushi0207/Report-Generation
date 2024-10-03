@@ -4,8 +4,6 @@ const reportGen = new mongoose.Schema({
     title:{
         required:[true,'Event  title is required'],
         type:String,
-        trim:true,
-        unique: false,
     },
     description:{
         required:[true,'Event description is required'],
@@ -20,17 +18,13 @@ const reportGen = new mongoose.Schema({
             required: [true, 'Event location is required'],
         },
     image: { 
-            type:Image,
+            type:String,
             required: [false, 'Event image is required'],
         },
     template:{
         type:String,
         required:[true,'Event template is required'],
         },
-    date:{
-        type:Date,
-        default:Date.now,
-    },
-
+    
 })
 module.exports = mongoose.model('Report', reportGen);
